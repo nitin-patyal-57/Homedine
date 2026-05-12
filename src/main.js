@@ -129,6 +129,7 @@ function setupProductCardsRouting() {
             if (e.target.closest('button')) return;
 
             const nameEl = card.querySelector('h3, h4, p.font-headline-md');
+            const imgEl = card.querySelector('img');
             if (nameEl) {
                 const name = nameEl.innerText.trim();
                 let id = name.toLowerCase().replace(/[^a-z0-9]/g, '-');
@@ -138,7 +139,11 @@ function setupProductCardsRouting() {
                 if (id.includes('bamboo')) id = 'bamboo-utensil-set';
                 if (id.includes('pitcher') || id.includes('drinkware')) id = 'freshpitcher';
                 
-                window.location.href = `/product.html?id=${id}`;
+                let url = `/product.html?id=${id}`;
+                if (imgEl && imgEl.src) {
+                    url += `&img=${encodeURIComponent(imgEl.src)}`;
+                }
+                window.location.href = url;
             }
         });
     });
@@ -315,10 +320,20 @@ window.removeCartItem = (id) => removeFromCart(id);
 function renderProductDetailPage() {
     const params = new URLSearchParams(window.location.search);
     let id = params.get('id');
+    const coverImage = params.get('img');
     // Default to a product if none provided
     if (!id) id = 'stonesip-ceramic-cup';
 
     const product = getProductById(id) || getProductById('stonesip-ceramic-cup');
+
+    if (coverImage) {
+        if (!product.images.includes(coverImage)) {
+            product.images.unshift(coverImage);
+        } else {
+            product.images = product.images.filter(img => img !== coverImage);
+            product.images.unshift(coverImage);
+        }
+    }
 
     // Update Headings and Content
     const titleEl = document.querySelector('h1.font-headline-lg');
