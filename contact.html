@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Homedine</title>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav aria-label="Main Navigation" class="bg-transparent dark:bg-transparent docked full-width top-0 z-50 flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto hidden md:flex">
+<!-- Brand Logo -->
+<a class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim italic" href="/index.html">
+            Homedine
+        </a>
+<!-- Navigation Links -->
+<div class="flex items-center gap-8">
+<a class="text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md" href="#">
+                Shop
+            </a>
+<a class="text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md" href="#">
+                Bestsellers
+            </a>
+<a class="text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md" href="#">
+                Gallery
+            </a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 font-label-md text-label-md scale-95 transition-transform duration-200" href="#">
+                About
+            </a>
+</div>
+<!-- Trailing Icon Actions -->
+<div class="flex items-center gap-6 text-primary dark:text-primary-fixed">
+<a href="/cart.html" aria-label="shopping_bag" class="hover:text-secondary transition-colors duration-300">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</a>
+<a href="/login.html" aria-label="person" class="hover:text-secondary transition-colors duration-300">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</a>
+</div>
+</nav>
+<!-- Mobile Header Fallback -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile py-6 bg-transparent">
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-primary italic" href="/index.html">Homedine</a>
+<button aria-label="menu" class="text-primary">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Hero Section -->
+<div class="max-w-3xl mb-16 md:mb-24">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Get in Touch</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Whether you have a question about our sustainable practices, need assistance with an order, or simply want to share your thoughts on our collection, we're here to listen.
+            </p>
+</div>
+<!-- Bento Grid Layout for Contact Area -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Contact Form (Spans 7 columns) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-6 md:p-10 shadow-[0_4px_24px_rgba(24,49,38,0.04)] border border-surface-container">
+<form action="#" class="space-y-8" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name Field -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface" for="name">Full Name</label>
+<input class="w-full rounded-DEFAULT border border-outline-variant bg-transparent px-4 py-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-secondary focus:ring-1 focus:ring-secondary/20 outline-none transition-colors duration-200" id="name" name="name" placeholder="Jane Doe" required="" type="text"/>
+</div>
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface" for="email">Email Address</label>
+<input class="w-full rounded-DEFAULT border border-outline-variant bg-transparent px-4 py-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-secondary focus:ring-1 focus:ring-secondary/20 outline-none transition-colors duration-200" id="email" name="email" placeholder="jane@example.com" required="" type="email"/>
+</div>
+</div>
+<!-- Subject Field -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface" for="subject">Subject</label>
+<div class="relative">
+<select class="w-full rounded-DEFAULT border border-outline-variant bg-transparent px-4 py-3 font-body-md text-body-md text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary/20 outline-none transition-colors duration-200 appearance-none cursor-pointer" id="subject" name="subject">
+<option disabled="" selected="" value="">Select an inquiry type...</option>
+<option value="order">Order Support</option>
+<option value="product">Product Information</option>
+<option value="sustainability">Sustainability Practices</option>
+<option value="other">Other Inquiry</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Message Field -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface" for="message">Message</label>
+<textarea class="w-full rounded-DEFAULT border border-outline-variant bg-transparent px-4 py-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-secondary focus:ring-1 focus:ring-secondary/20 outline-none transition-colors duration-200 resize-y" id="message" name="message" placeholder="How can we help you craft a greener home?" required="" rows="5"></textarea>
+</div>
+<!-- Submit Button -->
+<div>
+<button class="inline-flex items-center justify-center bg-primary text-on-primary font-button text-button rounded-full px-8 py-4 hover:bg-primary/90 hover:-translate-y-0.5 shadow-[0_4px_12px_rgba(24,49,38,0.08)] hover:shadow-[0_6px_16px_rgba(24,49,38,0.15)] transition-all duration-300 w-full sm:w-auto" type="submit">
+                            Send Message
+                        </button>
+</div>
+</form>
+</div>
+<!-- Right Column: Contact Details (Spans 5 columns) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Info Card -->
+<div class="bg-surface-container-low rounded-xl p-8 lg:p-10 shadow-[0_8px_32px_rgba(24,49,38,0.05)] h-full flex flex-col justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Direct Contact</h2>
+<div class="space-y-8">
+<!-- Email -->
+<div class="flex items-start gap-4 group">
+<div class="p-3 rounded-full bg-surface-container-highest text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">Email</p>
+<a class="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors" href="mailto:hello@homedine.com">hello@homedine.com</a>
+</div>
+</div>
+<!-- Phone -->
+<div class="flex items-start gap-4 group">
+<div class="p-3 rounded-full bg-surface-container-highest text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">Phone</p>
+<a class="font-body-lg text-body-lg text-on-surface hover:text-primary transition-colors" href="tel:+18005550199">+1 (800) 555-0199</a>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Mon-Fri, 9am - 5pm EST</p>
+</div>
+</div>
+<!-- HQ Address -->
+<div class="flex items-start gap-4 group">
+<div class="p-3 rounded-full bg-surface-container-highest text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">Green Office HQ</p>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                                        1200 Canopy Way<br/>
+                                        Suite 400<br/>
+                                        Portland, OR 97204
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Accent (Green Office Vibe) -->
+<div class="mt-12 rounded-lg overflow-hidden h-40 relative group">
+<img alt="Homedine Green Office" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A bright, airy, modern eco-friendly office space bathed in soft natural sunlight. The room features minimal, sleek wooden desks and comfortable seating, surrounded by lush green indoor plants and organic textures like linen and stone. The aesthetic is clean, sustainable, and welcoming, embodying a quiet, tactile minimalist design philosophy in a light mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFFB7vD7D9JqnO12vK3UakMBnJXSJneW01QJKxKhWB4iM5K0qjc7IrNQiy0dMNGmO9gLSOHe0YT0fswtMTgMmzNJ7xYxnP7qnNsJG4tf1BF9MhthcQRuKe7no-L1Zsa_QtTmhe1boS-vWtYJzUEHjW2nhsr2miG-LO7lQrp8k_OmqZBnF9tg48PTCRoK5Drg3y8Zii7MqTvVxb9rSCs3DNJKcl7IguSbgtZmXWZ7nroFpBnBqHro7KGyhteUaU6ONdCdg-CdvDMw"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ Preview Section -->
+<div class="mt-24 md:mt-32 max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Quick Answers</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Find instant clarity on our most common inquiries.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ Accordion 1 -->
+<div class="border border-outline-variant rounded-xl bg-surface-container-lowest hover:border-outline transition-colors duration-300 overflow-hidden group cursor-pointer">
+<div class="flex justify-between items-center p-6 md:p-8">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">What is your shipping policy?</h3>
+<div class="p-2 rounded-full bg-surface-container group-hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</div>
+</div>
+<!-- Hidden Content (CSS representation of collapsed state, usually handled by JS, but keeping it simple/static for design) -->
+<!-- In a real implementation without JS, this would need pure CSS hack or be slightly open. We will show it closed but style the container. -->
+</div>
+<!-- FAQ Accordion 2 -->
+<div class="border border-outline-variant rounded-xl bg-surface-container-lowest hover:border-outline transition-colors duration-300 overflow-hidden group cursor-pointer">
+<div class="flex justify-between items-center p-6 md:p-8">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">How do returns work for sustainable items?</h3>
+<div class="p-2 rounded-full bg-surface-container group-hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</div>
+</div>
+</div>
+<!-- FAQ Accordion 3 -->
+<div class="border border-outline-variant rounded-xl bg-surface-container-lowest hover:border-outline transition-colors duration-300 overflow-hidden group cursor-pointer">
+<div class="flex justify-between items-center p-6 md:p-8">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">Are your packaging materials recyclable?</h3>
+<div class="p-2 rounded-full bg-surface-container group-hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<a class="inline-flex items-center gap-2 text-primary font-button text-button hover:text-secondary transition-colors group" href="#">
+                    View full FAQ 
+                    <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container full-width bottom mt-auto border-t border-surface-container-highest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-16 max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="md:col-span-1 flex flex-col items-start gap-4">
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed italic" href="/index.html">
+                    Homedine
+                </a>
+</div>
+<!-- Links Column -->
+<div class="md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">
+                    Sustainability
+                </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">
+                    Shipping &amp; Returns
+                </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">
+                    Privacy Policy
+                </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100 font-label-md text-label-md" href="#">
+                    Terms of Service
+                </a>
+<a class="text-primary dark:text-primary-fixed-dim underline hover:text-primary dark:hover:text-primary-fixed transition-colors opacity-100 font-label-md text-label-md" href="#">
+                    Contact Us
+                </a>
+</div>
+<!-- Copyright -->
+<div class="md:col-span-4 mt-12 pt-8 border-t border-outline-variant/30 text-center md:text-left">
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface opacity-70 text-sm">
+                    © 2024 Homedine. Consciously crafted for a greener home.
+                </p>
+</div>
+</div>
+</footer>
+    <script type="module" src="/src/main.js"></script>
+</body></html>

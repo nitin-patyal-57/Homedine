@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Homedine - Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<style>
+        .shadow-ambient {
+            box-shadow: 0 4px 20px rgba(46, 71, 59, 0.08);
+        }
+        .shadow-ambient-hover {
+            box-shadow: 0 8px 30px rgba(46, 71, 59, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar (Nav suppressed due to transactional intent, but brand anchor remains) -->
+<header class="w-full bg-transparent dark:bg-transparent docked full-width top-0 z-50">
+<div class="flex justify-center items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<a class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim italic tracking-tight" href="/index.html">Homedine</a>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center px-margin-mobile md:px-margin-desktop py-[60px] md:py-[120px]">
+<!-- Login Card -->
+<div class="w-full max-w-md bg-surface-container-lowest rounded-xl shadow-ambient p-[32px] md:p-[48px] transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-ambient-hover">
+<div class="text-center mb-[40px]">
+<h1 class="font-headline-md text-headline-md text-on-surface mb-unit">Welcome back</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Sign in to continue your conscious journey.</p>
+</div>
+<form action="#" class="space-y-[24px]" method="POST">
+<!-- Email Field -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-unit" for="email">Email</label>
+<div class="relative">
+<input class="w-full bg-transparent border border-outline-variant rounded p-[12px] font-body-md text-body-md text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none transition-colors" id="email" name="email" placeholder="your@email.com" required="" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div>
+<div class="flex justify-between items-center mb-unit">
+<label class="block font-label-md text-label-md text-on-surface" for="password">Password</label>
+<a class="font-label-md text-label-md text-primary hover:text-secondary transition-colors underline" href="#">Forgot password?</a>
+</div>
+<div class="relative">
+<input class="w-full bg-transparent border border-outline-variant rounded p-[12px] font-body-md text-body-md text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none transition-colors" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+<button class="absolute inset-y-0 right-0 pr-[12px] flex items-center text-outline hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember Me -->
+<div class="flex items-center">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary bg-transparent cursor-pointer" id="remember" name="remember" type="checkbox"/>
+<label class="ml-[8px] font-body-md text-body-md text-on-surface-variant cursor-pointer" for="remember">Remember me</label>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary text-on-primary font-button text-button rounded-full py-[16px] px-[24px] hover:bg-primary-container transition-colors duration-300 shadow-ambient hover:shadow-ambient-hover transform hover:-translate-y-0.5 flex justify-center items-center gap-[8px]" type="submit">
+                    Sign In
+                    <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="mt-[32px] mb-[24px] flex items-center justify-center">
+<div class="h-px bg-outline-variant flex-grow"></div>
+<span class="px-[16px] font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Or continue with</span>
+<div class="h-px bg-outline-variant flex-grow"></div>
+</div>
+<!-- Social Logins -->
+<div class="space-y-[16px]">
+<button class="w-full bg-transparent border border-outline-variant rounded-full py-[12px] px-[24px] flex items-center justify-center gap-[12px] font-button text-button text-on-surface hover:bg-surface-container transition-colors duration-300" type="button">
+<!-- Placeholder for Google Icon to avoid external assets not allowed in spec, using text -->
+<span class="font-bold">G</span>
+                    Google
+                </button>
+<button class="w-full bg-transparent border border-outline-variant rounded-full py-[12px] px-[24px] flex items-center justify-center gap-[12px] font-button text-button text-on-surface hover:bg-surface-container transition-colors duration-300" type="button">
+<!-- Placeholder for Apple Icon -->
+<span class="material-symbols-outlined text-[20px]" data-icon="mac">laptop_mac</span>
+                    Apple
+                </button>
+</div>
+<!-- Sign Up Link -->
+<div class="mt-[32px] text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Don't have an account? 
+                    <a class="font-label-md text-label-md text-primary hover:text-secondary underline transition-colors" href="#">Sign up</a>
+</p>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-low dark:bg-surface-container mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto items-center md:items-start text-center md:text-left">
+<div class="col-span-1 md:col-span-4 flex flex-col md:flex-row justify-between items-center gap-[24px] border-t border-outline-variant/30 pt-[32px]">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed italic tracking-tight">Homedine</span>
+<nav class="flex flex-wrap justify-center gap-[24px]">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="/sustainability.html">Sustainability</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="/contact.html">Contact Us</a>
+</nav>
+</div>
+<div class="col-span-1 md:col-span-4 text-center mt-[32px]">
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface opacity-80">© 2024 Homedine. Consciously crafted for a greener home.</p>
+</div>
+</div>
+</footer>
+    <script type="module" src="/src/main.js"></script>
+</body></html>

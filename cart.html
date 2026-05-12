@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shopping Cart - Homedine</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+
+</head>
+<body class="bg-background text-on-background antialiased font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-transparent text-primary flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto docked full-width top-0 z-50 flat no shadows bg-transparent dark:bg-transparent text-primary dark:text-primary-fixed">
+<div class="flex items-center gap-gutter">
+<a class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim italic" href="/index.html">Homedine</a>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/shop.html">Shop</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/shop.html">Bestsellers</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/journal.html">Gallery</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/about.html">About</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden lg:block">
+<input class="bg-surface-container-low border-none rounded-full pl-10 pr-4 py-2 font-body-md text-sm focus:ring-2 focus:ring-primary focus:outline-none w-48" placeholder="Search Product..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]" data-icon="search">search</span>
+</div>
+<a href="/cart.html" aria-label="shopping_bag" class="p-2 rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</a>
+<a href="/login.html" aria-label="person" class="p-2 rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 min-h-[716px]">
+<header class="mb-12">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-4">Your Shopping Cart</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Review your eco-friendly selections before checkout.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Cart Items List -->
+<section class="lg:col-span-8 flex flex-col gap-6">
+<!-- Cart Item 1 -->
+<article class="flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-surface-container-lowest p-6 rounded-xl border border-surface-container-high shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="w-full sm:w-32 h-32 rounded-lg overflow-hidden bg-surface-container-low shrink-0 relative">
+<img alt="Reusable Drinkware" class="w-full h-full object-cover" data-alt="A sleek, minimalist reusable water bottle in a matte sage green color. The bottle is standing upright on a clean, light cream surface. Soft, natural sunlight creates subtle shadows, emphasizing the smooth texture of the eco-friendly material. The overall aesthetic is clean, modern, and sustainable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq1vPs-sOP9LEhcxHdpi-Vptsm6O4DhwT9hoRLRI4i93mlbTtqSHhGEUOBpR-EMlM7keBo3qOW6Xhd1woZtfITtPpfHrCDjQnktDausLWbGHkOW5F_hRevV0IKPHKTKaT_7UjVYwBVbkdQYhm4WCRKUy7WhZiExnXFIsho8wovK3wWyOsdioo5FMzgqkcELD4BfjfcRWdimATRkFD8qZUVCRFeRrv_hfHAelCffQUXm9JVeLHIlf1UYYiX8X90bXwtMjIWP00YJw"/>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full w-full">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Reusable drinkware for a greener lifestyle.</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Color: Sage Green</p>
+</div>
+<span class="font-label-md text-label-md text-primary">$43.85</span>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center border border-outline-variant rounded-full bg-surface">
+<button aria-label="Decrease quantity" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="remove">remove</span>
+</button>
+<input aria-label="Quantity" class="w-12 text-center bg-transparent border-none font-body-md text-sm focus:ring-0 p-0 text-on-surface" min="1" type="number" value="1"/>
+<button aria-label="Increase quantity" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+</button>
+</div>
+<button class="text-error font-label-md text-xs hover:underline flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]" data-icon="delete">delete</span> Remove
+                            </button>
+</div>
+</div>
+</article>
+<!-- Cart Item 2 -->
+<article class="flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-surface-container-lowest p-6 rounded-xl border border-surface-container-high shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="w-full sm:w-32 h-32 rounded-lg overflow-hidden bg-surface-container-low shrink-0 relative">
+<img alt="Bamboo Utensil Set" class="w-full h-full object-cover" data-alt="A set of bamboo kitchen utensils, including spoons and spatulas, resting in a minimalist white ceramic holder. The tools show beautiful natural wood grain. The setting is a bright, airy kitchen counter bathed in morning light, conveying a sense of organic sustainability and high-quality craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJbKhjkENnCYFYv1yeL7Efbdt7lc7VshEXkcd97gSojvcp4Mqoopwrtf1RMk3rXNWAXiFsbdFrPq_r-esJikPAIBiGwNQsNMxQSYOOoCgbZluJgka14AaP-EpwYcEgKugNy1cJNDcnEBFoHWXXzsbQq_9ic7hKfc2w5XLtK_S-ATFSlf--kOIoYAEBfMOFSBbqwCmpNeBErIP_f2zWdtRFVuW-P4Fxf3U4ic7FZXc8WQ6dnjHk7DDFlHPy5kL-dlQDbzP2MtD0rQ"/>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full w-full">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Bamboo Made Utensil Holder</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Material: Natural Bamboo</p>
+</div>
+<span class="font-label-md text-label-md text-primary">$26.27</span>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center border border-outline-variant rounded-full bg-surface">
+<button aria-label="Decrease quantity" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="remove">remove</span>
+</button>
+<input aria-label="Quantity" class="w-12 text-center bg-transparent border-none font-body-md text-sm focus:ring-0 p-0 text-on-surface" min="1" type="number" value="2"/>
+<button aria-label="Increase quantity" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+</button>
+</div>
+<button class="text-error font-label-md text-xs hover:underline flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]" data-icon="delete">delete</span> Remove
+                            </button>
+</div>
+</div>
+</article>
+</section>
+<!-- Order Summary Sidebar -->
+<aside class="lg:col-span-4 flex flex-col gap-6">
+<div class="bg-surface-container-low rounded-xl p-8 sticky top-32 border border-surface-container">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Order Summary</h2>
+<div class="flex flex-col gap-4 font-body-md text-body-md text-on-surface mb-6 border-b border-surface-container-high pb-6">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Subtotal</span>
+<span class="font-medium">$96.39</span>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-on-surface-variant">Shipping</span>
+<span class="text-xs text-secondary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="eco">eco</span> Eco-Friendly Shipping
+                                </span>
+</div>
+<span class="font-medium">$5.00</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Tax</span>
+<span class="font-medium">Calculated at checkout</span>
+</div>
+</div>
+<div class="flex justify-between items-center mb-8">
+<span class="font-label-md text-lg text-on-surface">Total</span>
+<span class="font-headline-md text-2xl text-primary">$101.39</span>
+</div>
+<button class="w-full bg-primary text-on-primary font-button text-button py-4 px-6 rounded-full hover:bg-on-primary-fixed-variant transition-colors duration-300 shadow-sm hover:shadow-md flex justify-center items-center gap-2">
+                        Proceed to Checkout <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Sustainable Highlight -->
+<div class="bg-secondary-container text-on-secondary-container rounded-xl p-6 border border-secondary-fixed-dim">
+<h3 class="font-label-md text-label-md mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="nature_people">nature_people</span>
+                        Why Shop Sustainable?
+                    </h3>
+<ul class="font-body-md text-sm space-y-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0" data-icon="check_circle">check_circle</span>
+<span>Reduces carbon footprint with zero-waste packaging.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0" data-icon="check_circle">check_circle</span>
+<span>Supports ethical manufacturing and fair trade.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0" data-icon="check_circle">check_circle</span>
+<span>Durable, timeless design means buying less, better.</span>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-16 max-w-container-max mx-auto full-width bottom flat no shadows">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed block mb-4 italic" href="/index.html">Homedine</a>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface opacity-80">
+                © 2024 Homedine. Consciously crafted for a greener home.
+            </p>
+</div>
+<div class="md:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-8">
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="/sustainability.html">Sustainability</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Shipping &amp; Returns</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-3 col-span-2 sm:col-span-1">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="/contact.html">Contact Us</a>
+</div>
+</div>
+</footer>
+    <script type="module" src="/src/main.js"></script>
+</body></html>

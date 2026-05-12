@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shop - Homedine</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+
+</head>
+<body class="font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<header class="bg-surface-container-lowest dark:bg-transparent docked full-width top-0 z-50 flat no shadows sticky border-b border-surface-container-highest">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<!-- Navigation Links (Left) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/shop.html">Shop</a>
+<a class="text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/shop.html">Bestsellers</a>
+<a class="text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/journal.html">Gallery</a>
+<a class="text-on-surface dark:text-on-background opacity-80 hover:opacity-100 transition-opacity font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="/about.html">About</a>
+</nav>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Brand Logo (Center) -->
+<div class="absolute left-1/2 transform -translate-x-1/2">
+<a class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim italic" href="/index.html">Homedine</a>
+</div>
+<!-- Trailing Actions (Right) -->
+<div class="flex items-center gap-6">
+<!-- Search Bar -->
+<div class="hidden lg:flex items-center bg-surface-container-low rounded-full px-4 py-2 border border-surface-variant focus-within:border-secondary transition-colors">
+<span class="material-symbols-outlined text-outline text-sm mr-2">search</span>
+<input class="bg-transparent border-none outline-none text-sm placeholder-outline w-40 focus:ring-0 text-on-surface" placeholder="Search Product..." type="text"/>
+</div>
+<a href="/cart.html" aria-label="Shopping Bag" class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+</a>
+<a href="/login.html" aria-label="User Profile" class="hidden md:block text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">person</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-12">
+<!-- Breadcrumbs & Heading -->
+<div class="mb-10">
+<nav aria-label="Breadcrumb" class="flex text-sm text-on-surface-variant mb-4">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+</li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm mx-1">chevron_right</span>
+<span class="text-primary font-medium">Shop All</span>
+</div>
+</li>
+</ol>
+</nav>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-surface-variant pb-6">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Shop All Products</h1>
+<p class="text-body-md text-on-surface-variant max-w-md">Thoughtfully designed, sustainably sourced kitchenware for your mindful home.</p>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-64 flex-shrink-0 mb-8 lg:mb-0">
+<div class="sticky top-32 space-y-8">
+<!-- Categories -->
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-4 uppercase tracking-wider">Categories</h3>
+<ul class="space-y-3">
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="form-checkbox h-4 w-4 text-primary border-outline rounded focus:ring-primary-container focus:ring-offset-background bg-transparent" type="checkbox"/>
+<span class="ml-3 text-body-md text-on-surface group-hover:text-primary transition-colors">All Products</span>
+</label>
+</li>
+<li>
+<label class="flex items-center group cursor-pointer">
+<input checked="" class="form-checkbox h-4 w-4 text-primary border-outline rounded focus:ring-primary-container focus:ring-offset-background bg-transparent" type="checkbox"/>
+<span class="ml-3 text-body-md text-primary font-medium">Cookware</span>
+</label>
+</li>
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="form-checkbox h-4 w-4 text-primary border-outline rounded focus:ring-primary-container focus:ring-offset-background bg-transparent" type="checkbox"/>
+<span class="ml-3 text-body-md text-on-surface group-hover:text-primary transition-colors">Drinkware</span>
+</label>
+</li>
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="form-checkbox h-4 w-4 text-primary border-outline rounded focus:ring-primary-container focus:ring-offset-background bg-transparent" type="checkbox"/>
+<span class="ml-3 text-body-md text-on-surface group-hover:text-primary transition-colors">Utensils</span>
+</label>
+</li>
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="form-checkbox h-4 w-4 text-primary border-outline rounded focus:ring-primary-container focus:ring-offset-background bg-transparent" type="checkbox"/>
+<span class="ml-3 text-body-md text-on-surface group-hover:text-primary transition-colors">Accessories</span>
+</label>
+</li>
+</ul>
+</div>
+<!-- Price Filter -->
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-4 uppercase tracking-wider">Price Range</h3>
+<div class="space-y-4">
+<input class="w-full h-1 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" max="200" min="0" type="range" value="100"/>
+<div class="flex items-center justify-between">
+<span class="text-sm text-on-surface-variant">$0</span>
+<span class="text-sm text-primary font-medium">$100+</span>
+</div>
+</div>
+</div>
+<!-- Eco Features -->
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-4 uppercase tracking-wider">Eco Features</h3>
+<ul class="space-y-3">
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="form-checkbox h-4 w-4 text-primary border-outline rounded focus:ring-primary-container focus:ring-offset-background bg-transparent" type="checkbox"/>
+<span class="ml-3 text-body-md text-on-surface group-hover:text-primary transition-colors">BPA Free</span>
+</label>
+</li>
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="form-checkbox h-4 w-4 text-primary border-outline rounded focus:ring-primary-container focus:ring-offset-background bg-transparent" type="checkbox"/>
+<span class="ml-3 text-body-md text-on-surface group-hover:text-primary transition-colors">Recycled Materials</span>
+</label>
+</li>
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="form-checkbox h-4 w-4 text-primary border-outline rounded focus:ring-primary-container focus:ring-offset-background bg-transparent" type="checkbox"/>
+<span class="ml-3 text-body-md text-on-surface group-hover:text-primary transition-colors">Compostable</span>
+</label>
+</li>
+</ul>
+</div>
+</div>
+</aside>
+<!-- Product Grid Area -->
+<div class="flex-grow">
+<!-- Toolbar -->
+<div class="flex justify-between items-center mb-8">
+<p class="text-body-md text-on-surface-variant">Showing 1-8 of 24 products</p>
+<div class="flex items-center gap-2">
+<span class="text-sm text-on-surface-variant">Sort by:</span>
+<select class="bg-transparent border-none text-primary font-medium text-sm focus:ring-0 cursor-pointer pr-8">
+<option>Featured</option>
+<option>Newest</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-12">
+<!-- Product Card 1 -->
+<div class="group flex flex-col h-full card-hover-shadow rounded-xl p-2 transition-all">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4">
+<!-- Badge -->
+<div class="absolute top-3 left-3 z-10 flex gap-2">
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">New</span>
+</div>
+<img alt="Ceramic non-stick pan set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist setup of ceramic non-stick cookware in soft sage green, resting on a textured linen cloth. The lighting is bright and diffuse, casting soft, natural shadows that emphasize the matte finish of the pots. The setting is clean and airy, fitting a modern, eco-conscious aesthetic with neutral tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdzr8mUGq69IGPWGmbXMtKQ6nO-fog1b3U2mXhpO4cZ_Q4fV-UhX3fGI82EoJj_d13-0bb7m7vzKyNZ06QYMQWvUyVtUjwjXhZrAu7JnS2sd-sp7ay8RCKiXjRSRq0gbr487IpicrimoeiDZSrDUGb57WnKqn9bsOYMt6sbrwzqmEsqQxHcLOnvFaX8GYpV1yB5lG2y9oYTT9En7uuXBjVv0-qkDMwTQjLVsWEpSsSvZTjUDcFrOti-fT1Ay0KfJ3H8Fl7Knqjdg"/>
+<!-- Quick Add Overlay -->
+<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[90%]">
+<button class="w-full bg-surface/90 backdrop-blur-sm text-primary font-button text-button py-3 rounded-full shadow-sm hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">shopping_cart</span> Quick Add
+                                </button>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] text-secondary font-semibold uppercase tracking-wider border border-secondary/30 px-1.5 py-0.5 rounded">Toxin-Free</span>
+</div>
+<h3 class="font-headline-md text-lg text-primary mb-1">Sage Ceramic Pan Set</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2 mb-3 flex-grow">Non-toxic, sustainably crafted ceramic coating for healthy cooking.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-medium text-primary">$145.00</span>
+<button aria-label="Add to cart" class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col h-full card-hover-shadow rounded-xl p-2 transition-all">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4">
+<!-- Badge -->
+<div class="absolute top-3 left-3 z-10 flex gap-2">
+<span class="bg-primary-container text-on-primary-container text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">Bestseller</span>
+</div>
+<img alt="Bamboo utensil set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully arranged set of bamboo kitchen utensils, including spatulas and spoons, resting on a smooth marble countertop. Warm, golden-hour sunlight streams across the scene, highlighting the natural wood grain and organic textures. The overall mood is warm, inviting, and emphasizes sustainable living with a premium feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3Mpw9NDrhcw9d2W95vtZvciVZU9mciHdkY7vePOvzUyV0PRCOG3R99dZLqsOCXpzEcyhhoLfcBkgI_8yF5lYLHEiYfaTSmDz_1wbcQO-WIFTx8-fXSSJkrtee-2zkLSXROitDY6hnpWafmLaReZ1-bhExioXoEluvjLYM85qhSOXW507KnR9U-Jit1XYgSfISz5cy3aMmonfUVtgo2vNz3kWgJ11iLWdqSw7iU3W1-ZvCzAwfHv5xwcfzUnn0A_APaQJ6qzxL_A"/>
+<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[90%]">
+<button class="w-full bg-surface/90 backdrop-blur-sm text-primary font-button text-button py-3 rounded-full shadow-sm hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">shopping_cart</span> Quick Add
+                                </button>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] text-secondary font-semibold uppercase tracking-wider border border-secondary/30 px-1.5 py-0.5 rounded">FSC Certified</span>
+</div>
+<h3 class="font-headline-md text-lg text-primary mb-1">Essential Bamboo Utensils</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2 mb-3 flex-grow">Durable, heat-resistant bamboo set perfect for everyday cooking.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-medium text-primary">$32.00</span>
+<button aria-label="Add to cart" class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col h-full card-hover-shadow rounded-xl p-2 transition-all">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4">
+<img alt="Reusable glass storage containers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Stackable glass food storage containers with sustainably sourced bamboo lids, set against a soft, creamy white background. Subtle, diffused lighting creates a minimalist, clean aesthetic, emphasizing the clarity of the glass and the organic texture of the wood. The composition is simple, elegant, and highly functional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8TSSkhv66-BXKJfHy26Xuu_aygUVUYStu3b6OapXwlgfqc4eaGBUywJ9P_fO1AO_RIj8ll-1t9sEZrdyMZFvaqv7YubiVCgLOXTrhJkxIfOoF9gO6UZyH6dvjL3lbzpPDgz1Fi23biBhEykdcXYP61yexKTk4-8KEjTm1S5l0fC1ed5yEMuHuGimZtP6dEOmc2xkdxbBwJ3mHbOPRemTDchqdDyMvKDjLkjdxANBicBF-nVcPBv2sto2nDTAeGBJimyP_7v5K0A"/>
+<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[90%]">
+<button class="w-full bg-surface/90 backdrop-blur-sm text-primary font-button text-button py-3 rounded-full shadow-sm hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">shopping_cart</span> Quick Add
+                                </button>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] text-secondary font-semibold uppercase tracking-wider border border-secondary/30 px-1.5 py-0.5 rounded">BPA Free</span>
+</div>
+<h3 class="font-headline-md text-lg text-primary mb-1">Glass Pantry Jars</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2 mb-3 flex-grow">Airtight bamboo lids keep ingredients fresh without plastic.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-medium text-primary">$48.00</span>
+<button aria-label="Add to cart" class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col h-full card-hover-shadow rounded-xl p-2 transition-all">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4">
+<img alt="Gradient water bottle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sleek, insulated stainless steel water bottle in a matte olive green finish, standing upright on a textured stone surface. The background is a soft, muted cream wall. The lighting is very soft and directional, highlighting the premium matte texture of the bottle and promoting a sustainable lifestyle aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYTYaLh6tF8anZm6nmEXzhT-MxFLtTo2BkQAcDINpL-bT8b15yGcNnH29crW2cfaxU2TRfmc9j6S-WLsR8FqjS-1knVjLs-KZ7nprFcZhq-_hhRqvVtAR_gQ9psai7Vf0cpcASjX_-b2zwHOtUXg3R31iaTNixQzIKvstpupP39CFpjU_QCceL_jzBPZ7t1Apk1oJwLIN6HfkY9GOsZRcz4WTEWe84yZwjiLgKQrxi7aQj0oCyztBIrzdcKrAkB-b2qBSDMdxLww"/>
+<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[90%]">
+<button class="w-full bg-surface/90 backdrop-blur-sm text-primary font-button text-button py-3 rounded-full shadow-sm hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">shopping_cart</span> Quick Add
+                                </button>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] text-secondary font-semibold uppercase tracking-wider border border-secondary/30 px-1.5 py-0.5 rounded">Reusable</span>
+</div>
+<h3 class="font-headline-md text-lg text-primary mb-1">Everyday Thermal Flask</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2 mb-3 flex-grow">Keeps drinks cold for 24h, replacing single-use plastics.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-medium text-primary">$35.00</span>
+<button aria-label="Add to cart" class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex justify-center">
+<nav aria-label="Pagination" class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-colors" disabled="">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-medium text-sm transition-colors">1</button>
+<button class="w-10 h-10 rounded-full border border-transparent hover:bg-surface-container-high flex items-center justify-center text-on-surface font-medium text-sm transition-colors">2</button>
+<button class="w-10 h-10 rounded-full border border-transparent hover:bg-surface-container-high flex items-center justify-center text-on-surface font-medium text-sm transition-colors">3</button>
+<span class="text-on-surface-variant px-2">...</span>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</nav>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-low dark:bg-surface-container text-on-surface dark:text-on-surface font-body-md text-body-md full-width bottom mt-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto">
+<!-- Brand & Copyright -->
+<div class="col-span-1 md:col-span-2 flex flex-col justify-between mb-8 md:mb-0">
+<div>
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed italic mb-4 inline-block" href="/index.html">Homedine</a>
+<p class="text-on-surface-variant max-w-sm mt-4">Curated kitchenware for the conscious home. We believe in durable, sustainable, and beautiful design.</p>
+</div>
+<div class="mt-12">
+<p class="text-sm text-on-surface-variant">© 2024 Homedine. Consciously crafted for a greener home.</p>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1">
+<h4 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-wider">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors text-sm" href="/sustainability.html">Sustainability</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors text-sm" href="#">Shipping &amp; Returns</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1">
+<h4 class="font-label-md text-label-md text-primary mb-6 uppercase tracking-wider">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors text-sm" href="/contact.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</footer>
+    <script type="module" src="/src/main.js"></script>
+</body></html>
